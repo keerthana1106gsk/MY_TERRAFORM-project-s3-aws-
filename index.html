@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>John's Portfolio</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            text-align: center;
+            font-size: 2.5em;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin-top: 10px;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        nav ul li a:hover {
+            color: #ff6600;
+        }
+
+        section {
+            padding: 40px 0;
+        }
+
+        section h2 {
+            font-size: 2em;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        section p {
+            text-align: center;
+            font-size: 1.1em;
+        }
+
+        .profile-image img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            display: block;
+            margin: 20px auto;
+        }
+
+        .projects-list {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+
+        .project {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 30%;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .project:hover {
+            transform: translateY(-10px);
+        }
+
+        .reviews {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+
+        .review {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 45%;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        /* Animations */
+        .animate__animated {
+            animation-duration: 1s;
+            animation-fill-mode: both;
+        }
+
+        .animate__fadeIn {
+            animation-name: fadeIn;
+        }
+
+        .animate__fadeInUp {
+            animation-name: fadeInUp;
+        }
+
+        .animate__zoomIn {
+            animation-name: zoomIn;
+        }
+
+        .animate__fadeInLeft {
+            animation-name: fadeInLeft;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @keyframes fadeInUp {
+            0% { opacity: 0; transform: translateY(50px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes zoomIn {
+            0% { transform: scale(0.9); opacity: 0; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+        @keyframes fadeInLeft {
+            0% { opacity: 0; transform: translateX(-50px); }
+            100% { opacity: 1; transform: translateX(0); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="animate__animated animate__fadeIn">John's Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2 class="animate__animated animate__fadeInUp">About Me</h2>
+            <p>Hello! I'm John, a passionate web developer with experience in creating dynamic and user-friendly websites. Below are some of the projects I've worked on and reviews from clients.</p>
+            <div class="profile-image animate__animated animate__fadeInUp">
+                <img src="https://myterraformprojectwebsite2025.s3.us-east-1.amazonaws.com/pfp1.jpeg" alt="John's Profile Picture">
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2 class="animate__animated animate__fadeInUp">Projects</h2>
+            <div class="projects-list">
+                <div class="project animate__animated animate__zoomIn">
+                    <h3>Project 1: Personal Blog</h3>
+                    <p>A responsive personal blog website using HTML, CSS, and JavaScript.</p>
+                </div>
+                <div class="project animate__animated animate__zoomIn">
+                    <h3>Project 2: E-commerce Website</h3>
+                    <p>An e-commerce platform with user authentication and product management built with React and Node.js.</p>
+                </div>
+                <div class="project animate__animated animate__zoomIn">
+                    <h3>Project 3: Portfolio Website</h3>
+                    <p>A portfolio website showcasing my work, skills, and achievements built with HTML, CSS, and JavaScript.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews">
+        <div class="container">
+            <h2 class="animate__animated animate__fadeInUp">Client Reviews</h2>
+            <div class="reviews">
+                <div class="review animate__animated animate__fadeInLeft">
+                    <p>"John delivered an exceptional e-commerce site that exceeded our expectations. Highly recommend!"</p>
+                    <h4>- Sarah, CEO of Tech Co.</h4>
+                </div>
+                <div class="review animate__animated animate__fadeInLeft">
+                    <p>"The personal blog website John built for me is exactly what I wanted. Clean design and easy to navigate!"</p>
+                    <h4>- Mark, Blogger</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 John's Portfolio</p>
+        </div>
+    </footer>
+</body>
+</html>
