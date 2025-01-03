@@ -108,11 +108,6 @@ After deployment, the following information will be provided:
 
 ---
 
-## 📄 License  
-This project is licensed under the MIT License.  
-
----
-
 ## 👩‍💻 Author  
 **Sree Keerthana G**  
 - **Email**: [gsreekeerthana001@gmail.com]  
